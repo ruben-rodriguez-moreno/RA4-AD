@@ -9,8 +9,8 @@ import org.hibernate.service.ServiceRegistry;
 public class HibernateConfiguration {
     private static SessionFactory sessionFactory;
 
-    public static SessionFactory getSessionFactory(){
-        if (sessionFactory == null || sessionFactory.isClosed()){
+    public static SessionFactory getSessionFactory() {
+        if (sessionFactory == null || sessionFactory.isClosed()) {
             buildSessionFactory();
         }
         return sessionFactory;
